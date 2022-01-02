@@ -15,5 +15,5 @@ name = "lib_rs_dnsdist_console"
 path = "src/lib.rs"
 
 [[bin]]
-name = "rs_dnsdist_console"
+name = "rs-dnsdist-console"
 path = "src/main.rs"
