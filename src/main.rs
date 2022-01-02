@@ -5,7 +5,9 @@ fn main() {
     sodiumoxide::init().unwrap();
 
     let mut args = env::args();
-    let name = args.next().unwrap_or_else(|| "rs-dnsdist-console".to_string());
+    let name = args
+        .next()
+        .unwrap_or_else(|| "rs-dnsdist-console".to_string());
 
     let host = args.next().unwrap_or_else(|| {
         println!("usage: {} HOST KEY PORT COMMAND", name);
