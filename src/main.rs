@@ -34,6 +34,6 @@ fn main() {
         process::exit(1);
     });
 
-    let content = rs_dnsdist_console::execute_command(host, port, key, command).unwrap();
+    let content = lib_rs_dnsdist_console::execute_command(host, port, key, command).unwrap();
     println!("{}", content);
 }
